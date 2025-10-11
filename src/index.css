@@ -5,7 +5,7 @@
 .navbar {
     display: flex;
     align-content: center;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     background-color: #FFC0CB;
     font-family: 'Lato';
@@ -28,125 +28,127 @@
 
 
 
-
-.hero {
+main {
     background-color: #FFF5E1;
     font-family: 'Lato';
 
+    .hero {
 
 
-    h1 {
-        font-family: 'Pacifico';
-        color: #5D4037;
-        display: flex;
-        justify-content: center;
-        margin: 0px;
-        padding: 15px;
-    }
-
-    h2 {
-        font-family: 'Pacifico';
-        color: #5D4037;
-        display: flex;
-        justify-content: center;
-        margin: 0px;
-        padding: 15px;
-    }
-
-    p {
-        color: #5D4037;
-    }
-
-    .btn {
-        margin: 50px;
-        background-color: #8B4513;
-        color: #FFF5E1;
-        padding: 15px;
-        border: 0;
-        text-decoration: none;
-    }
 
 
-    .hero_links{
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 5px;
-        list-style-type: none;
-        margin: 0;
-        padding: 16px;
-    }
-
-    .contenedor_cuadrado{
-        display: flex;
-        justify-content: center;
-    }
-
-    .cuadrado_principal {
-        width: 90%;
-        height: 300px;
-        background-color: #FFC0CB;
-        display: flex;
-        justify-content: space-between;
-        padding: 1%;
-        margin: 30px;
-
-
-        .primera_mitad {
-            background-color: #FFC0CB;
-            width: 60%;
+        h1 {
+            font-family: 'Pacifico';
+            color: #5D4037;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: center;
+            margin: 0px;
+            padding: 15px;
+        }
+
+
+
+
+        .btn {
+            margin: 50px;
+            background-color: #8B4513;
+            color: #FFF5E1;
+            padding: 15px;
+            border: 0;
+            text-decoration: none;
+        }
+
+
+        .hero_links {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 5px;
+            list-style-type: none;
+            margin: 0;
+            padding: 16px;
+        }
+
+        .contenedor_cuadrado {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cuadrado_principal {
+            width: 90%;
+            height: 300px;
+            background-color: #FFC0CB;
+            display: flex;
+            justify-content: space-between;
+            padding: 1%;
+            margin: 30px;
+
+
+            .primera_mitad {
+                background-color: #FFC0CB;
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         }
     }
-
 
     .productos {
 
 
         display: flex;
-        
 
-        h1{
-            font-size: medium;
-        }
 
-        .unidad {
-        width: 400px;
-        height: 500px;
-        padding: 1%;
-        background-color: #FFC0CB;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 10px;
-
-        button {
+        h2 {
+            font-family: 'Pacifico';
+            color: #5D4037;
+            display: flex;
+            justify-content: center;
             margin: 0px;
+            padding: 15px;
         }
 
         p {
-            margin: 6px;
+            color: #5D4037;
         }
 
-        img{
-            width: 100%;
-            height: 50%;
+        .unidad {
+            width: 400px;
+            height: 500px;
+            padding: 1%;
+            background-color: #FFC0CB;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+
+            button {
+                margin: 0px;
+            }
+
+            p {
+                margin: 6px;
+            }
+
+            img {
+                width: 100%;
+                height: 50%;
+            }
         }
-    }
 
     }
-
-
-    
-
 }
+
+
+
+
+
 
 footer {
     background-color: #8B4513;
     font-size: small;
     padding: 10px;
-    
+
     p {
         color: #B0BEC5;
     }
@@ -161,9 +163,12 @@ footer {
 
         li {
             margin: 20px;
-            list-style-type: none};
+            list-style-type: none
         }
+
+        ;
     }
+}
 
 
 .rojo {
