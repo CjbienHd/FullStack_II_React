@@ -15,7 +15,7 @@ function Hero() {
                     <div className={styles.primera_mitad}>
                         <h1>Pasteleria Mil Sabores</h1>
                         <p style={{ margin: "10px" }}>Somos una pasteleria que ofrece experiencias dulces y memorables a traves de nuestros productos de reposteria de la mas alta calidad para todo tipo de ocasiones minetras fomentamos nuestras raices historicas y creatividad</p>
-                        <NavLink to="/productos" className="btn">Ver Productos</NavLink>
+                        <NavLink to="/productos" className={styles.btn}>Ver Productos</NavLink>
                     </div>
                     <img src={pasteleria} width="40%" height="100%" alt="Pasteleria" />
                 </div>

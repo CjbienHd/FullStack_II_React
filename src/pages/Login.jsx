@@ -33,52 +33,54 @@ export default function Login() {
   }
 
   return (
-    <div className={styles.contenedor_login}>
-      <div className={styles.logo} />
-      <h1 className={styles.titulo}>Iniciar Sesión</h1>
+    <div className={styles.main}>
+      <div className={styles.contenedor_login}>
+        <div className={styles.logo} />
+        <h1 className={styles.titulo}>Iniciar Sesión</h1>
 
-      <div className={styles.caja}>
-        <form id="login-form" onSubmit={handleSubmit}>
-          <label htmlFor="email">Correo electrónico</label>
-          <input
-            type="email"
-            id="email"
-            placeholder="Ingrese su correo electrónico"
-            value={email}
-            onChange={(e)=>setEmail(e.target.value)}
-            required
-          />
-
-          <label htmlFor="password">Contraseña</label>
-          <div className={styles.input_pass}>
+        <div className={styles.caja}>
+          <form id="login-form" onSubmit={handleSubmit}>
+            <label htmlFor="email">Correo electrónico</label>
             <input
-              type={showPass ? 'text' : 'password'}
-              id="password"
-              placeholder="Ingrese su contraseña"
-              minLength={8}
-              maxLength={20}
-              value={password}
-              onChange={(e)=>setPassword(e.target.value)}
+              type="email"
+              id="email"
+              placeholder="Ingrese su correo electrónico"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               required
             />
-            <i
-              id="togglePass"
-              className={`fa-solid ${showPass ? 'fa-eye' : 'fa-eye-slash'}`}
-              onClick={()=>setShowPass(s=>!s)}
-              aria-label={showPass ? 'Ocultar contraseña' : 'Mostrar contraseña'}
-              title={showPass ? 'Ocultar contraseña' : 'Mostrar contraseña'}
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e)=> (e.key === 'Enter' || e.key === ' ') && setShowPass(s=>!s)}
-            />
-          </div>
 
-          <button type="submit" className={styles.btn}>Ingresar</button>
-        </form>
+            <label htmlFor="password">Contraseña</label>
+            <div className={styles.input_pass}>
+              <input
+                type={showPass ? 'text' : 'password'}
+                id="password"
+                placeholder="Ingrese su contraseña"
+                minLength={8}
+                maxLength={20}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+              />
+              <i
+                id="togglePass"
+                className={`fa-solid ${showPass ? 'fa-eye' : 'fa-eye-slash'}`}
+                onClick={() => setShowPass(s => !s)}
+                aria-label={showPass ? 'Ocultar contraseña' : 'Mostrar contraseña'}
+                title={showPass ? 'Ocultar contraseña' : 'Mostrar contraseña'}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && setShowPass(s => !s)}
+              />
+            </div>
 
-        <p className={styles.ayuda}>
-          ¿No tienes una cuenta? <Link to="/registro">Regístrate</Link>
-        </p>
+            <button type="submit" className={styles.btn}>Ingresar</button>
+          </form>
+
+          <p className={styles.ayuda}>
+            ¿No tienes una cuenta? <Link to="/registro">Regístrate</Link>
+          </p>
+        </div>
       </div>
     </div>
   )
