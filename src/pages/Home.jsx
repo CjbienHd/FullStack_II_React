@@ -10,6 +10,7 @@ import tiramisuClasico from "../assets/Tiramisu Classique _ Recette Originale.jp
 import tortaSinAzucarnaranja from "../assets/Orange Cake with Zesty Cream Cheese Frosting.jpg"
 import cheesecakeSinAzucar from "../assets/Cheesecake Factory Cheesecake.jpg"
 
+
 function Home(){
 
     const productos1 = [

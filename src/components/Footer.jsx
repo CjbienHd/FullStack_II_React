@@ -1,6 +1,8 @@
+import styles from "../styles/Index.module.css"
+
 function Footer() {
     return <footer>
-        <div className="footer">
+        <div className= {styles.footer}>
             <div className="side_name">
                 <p>Tienda de Reposteria 'Pasteleria Mil Sabores'</p>
                 <a>Tortas Cuadradas</a>
